@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <button id = "btn">Click me</button>
+    <div id="root"></div>
 </body>
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
 <script>
-    const button = document.getElementById("btn")
-    function handleClick(){
-        console.log("i have click")
-    }
-    button.addEventListener("click",handleClick)
+    const root = document.getElementById("root");
+    const span = React.createElement("span", {id:"sexy-span"},"sdfds");
+    ReactDOM.render(span,root)
 </script>
 </html>
